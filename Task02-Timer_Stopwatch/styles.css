@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(180deg, #0B0742, #5E72EB);
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 52px;
+  font-family: cursive;
+  text-align: center;
+  color: #97DECE;
+  padding: 0 64px;
+  margin: 0;
+}
+
+.stopwatch {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 23px;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #97DECE;
+  border-radius: 15%;
+}
+
+.time {
+  font-family:sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.controls {
+  display: flex;
+  grid-gap: 20px;
+  justify-content: center;
+  width: 187px;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin: 0;
+  outline: none;
+}
+
+#playButton {
+  display: block;
+}
+
+#pauseButton {
+  display: none;
+}
+
+.container {
+  height: 100vh;
+}
+
+i, #stop {
+  font-size: 38px;
+  color: #97DECE;
+}
+
+#playButton:hover, #resetButton:hover, #stop {
+  border: 0.2rem outset #439A97;
+  border-radius: 50%;
+}
+
+
+
+.timer1{
+  display: grid;
+  justify-content: center;
+}
+
+.timer {
+  font-family: sans-serif;
+  align-items: center;
+  padding: 24px 32px;
+  border-radius: 30px;
+  background: #000;
+}
+
+.timer__part {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.timer__btn {
+  width: 50px;
+  height: 50px;
+  margin-left: 16px;
+  border-radius: 50%;
+  border: none;
+  color: #97DECE;
+  background: #439A97;
+  cursor: pointer;
+}
+
+.timer__btn--start {
+  background: #00b84c;
+}
+
+.timer__btn--stop {
+  background: #ff0256;
+}

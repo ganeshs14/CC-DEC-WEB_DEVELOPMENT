@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stopwatch & Timer</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stopwatch and Timer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
-  <header>
-    <p class="heading">Stopwatch & Timer</p>
-  </header>
-
   <section class="container">
-    <h3>STOPWATCH</h3>
+    <div class="stopwatch">
+      <h1>STOPWATCH</h1>
+      <div class="outer">
+        <span class="time" id="display">00:00:00</span>
+      </div>
 
+      <div class="controls">
+        <button class="buttonPlay">
+          <i class="fa-solid fa-circle-play" id="playButton"></i>
+
+          <i class="fa-solid fa-circle-pause" id="pauseButton"></i>
+        </button>
+
+        <button class="buttonReset">
+          <i class="fa-solid fa-circle-stop" id="resetButton"></i>
+        </button>
+      </div>
+    </div>
   </section>
-
-  <script src="script.js" charset="utf-8"></script>
+  <section class="container">
+    <div class="timer1">
+      <h1>TIMER</h1>
+      <div class="timer"></div>
+    </div>
+  </section>
+  <script src="script.js"></script>
 </body>
 
 </html>

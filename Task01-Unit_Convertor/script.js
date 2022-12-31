@@ -50,12 +50,12 @@ m.addEventListener('input', function(){
 
 inch.addEventListener('input', function(){
   let is = this.value;
-  let fs = is;
+  let fs = is/12;
   let cms = is*2.54;
   let ms = is/39.37;
   let kms = is/39370;
   let mls = is/63360;
-  feet.value = is.toFixed(4);
+  feet.value = fs.toFixed(4);
   cm.value = cms.toFixed(4);
   m.value = ms.toFixed(4);
   km.value = kms.toFixed(4);
